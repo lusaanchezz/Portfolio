@@ -1,0 +1,8 @@
+function mayor string (int a) {
+let numero int;
+let cadena string;
+cadena = 'b es mayor';
+if (a>b) cadena = 'a es mayor';
+
+return cadena;
+}

@@ -1,0 +1,10 @@
+let posicion int;
+
+function algo int() {
+for (i = 10; i >0; --i) {
+posicion = posicion - i;
+}
+print posicion;
+print 'Resultado correcto';
+return posicion;
+}

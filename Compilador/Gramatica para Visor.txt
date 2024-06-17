@@ -1,0 +1,68 @@
+Axioma = P
+
+NoTerminales = { PZ P E EZ R RZ U UZ B BZ C CZ S SZ L Q X D T DZ J F H G K I Y Z W M }
+
+Terminales = { $ && > - -- id ( ) ent cad = ; , put get return if let int boolean string for void { } function }
+
+Producciones = {
+PZ -> P
+P -> D P 
+P -> F P
+P -> lambda
+E -> R EZ
+EZ -> && R EZ
+EZ -> lambda
+R -> U RZ
+RZ -> > U RZ
+RZ -> lambda
+U -> C UZ
+UZ -> - C UZ
+UZ -> lambda
+C -> id CZ
+C -> ( E )
+C -> ent
+C -> cad
+CZ -> = ent
+CZ -> ( L )
+CZ -> lambda
+S -> id SZ
+S -> Y
+SZ -> = E ;
+SZ -> ( L ) ;
+SZ -> ;
+L -> E Q
+L -> lambda
+Q -> , E Q
+Q -> lambda
+S -> put E ;
+S -> get id ;
+S -> return X ;
+X -> E
+X -> lambda
+D -> if ( E )  S
+D -> S
+D -> let id T ;
+T -> int
+T -> boolean
+T -> string
+M -> int
+M -> boolean
+M -> string
+M -> void
+D -> for ( Z ; E ; W ) { I }
+F -> function id H ( G ) { I }
+H -> M
+G -> void
+G -> T id K 
+G -> lambda
+K -> , T id K
+K -> lambda
+I -> D I
+I -> lambda
+Z -> id = E
+Z -> lambda
+W -> -- id
+W -> id = E
+W -> lambda
+Y -> -- id
+}

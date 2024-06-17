@@ -1,0 +1,16 @@
+<func, - >
+<id, -1>
+<int, - >
+<pa, - >
+<int, - >
+<id, 0>
+<p, - >
+<la, - >
+<let, - >
+<id, 1>
+<int, - >
+<pc, - >
+<if, - >
+<pa, - >
+<id, 0>
+Error en linea 3. ! no esta reconocido en el lenguaje

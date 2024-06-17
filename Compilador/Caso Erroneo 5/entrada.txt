@@ -1,0 +1,5 @@
+function prueba int (int x) {
+let comprueba int;
+if (x != comprueba)
+return x;
+}

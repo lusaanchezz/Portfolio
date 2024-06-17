@@ -1,0 +1,4 @@
+function prueba int (int x) {
+if (x < x)
+return x;
+}

@@ -1,0 +1,7 @@
+<let, - >
+<id, 0>
+<int, - >
+<pc, - >
+<id, 0>
+<ig, - >
+Error en linea 2. Numero fuera de rango

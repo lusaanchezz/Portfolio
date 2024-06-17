@@ -1,0 +1,5 @@
+function prueba string (string palabra) {
+let palabra string;
+palabra = 'asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdasdfasdfasd';
+return palabra;
+}

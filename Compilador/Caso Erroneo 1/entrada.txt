@@ -1,0 +1,5 @@
+let x int;
+x = 32768;
+let palabra string;
+
+x = x - palabra;

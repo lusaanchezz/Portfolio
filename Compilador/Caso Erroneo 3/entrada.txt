@@ -1,0 +1,3 @@
+function prueba int (int x) {
+x = x + x;
+}

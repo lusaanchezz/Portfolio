@@ -1,0 +1,9 @@
+let comprueba boolean;
+let encontrado boolean;
+let x int;
+
+if (comprueba) print comprueba;
+
+for (i = 10; i > 0; --i) {
+input x;
+}

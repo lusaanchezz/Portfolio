@@ -1,0 +1,14 @@
+let palabra int;
+let s int;
+s = palabra - s ; 
+function algo string (int a) {
+for (i = 10; i > 0; --i) {
+if (i > 0) print atributo;
+palabra = 'algo';
+x = x/2;
+}
+print palabra;
+print 'Resultado correcto';
+input x;
+return palabra;
+}
