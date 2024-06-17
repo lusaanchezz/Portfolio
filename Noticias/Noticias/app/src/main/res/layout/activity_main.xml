@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_shade"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idToolbar"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Noticias"
+                android:textColor="@color/red"
+                android:textAlignment="center"
+                android:padding="4dp"
+                android:gravity="center"
+                android:layout_marginEnd="15dp"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:id="@+id/btnNotificacion"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="13dp"
+                android:backgroundTint="@color/red"
+                android:text="Enviar notificacion"
+                android:textSize="7sp" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idCategorias"
+        android:orientation="horizontal"
+        android:layout_below="@id/idToolbar"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/categorias_item"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idNoticias"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/idCategorias"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/noticias"
+        />
+
+    <ProgressBar
+        android:id="@+id/idCargando"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>
